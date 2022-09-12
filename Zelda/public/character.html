@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>The Legend of Zelda | Character</title>
+    <link rel="icon" type="image/x-icon" href="./pics/BotW_Blue_Sheikah_Eye_Symbol48x48.ico">  
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styleCha.css" media="screen">
+
+    <script src="character.js" charset="utf-8" defer></script>
+
+  
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+        <!-- <i class="far fa-hand-lizard"> -->
+      <a href="#"><h1 class="site-title"><i class="icon"></i></i> The Legend of Zelda | Character</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink"><a href="/index.html">Home</a></li>
+          <li class="navitem navlink active"><a href="/character.html">Character</a></li>
+          <li class="navitem navlink"><a href="#">Enemies</a></li>
+          <li class="navitem navlink"><a href="#">Items</a></li>
+          <li class="navitem navlink"><a href="#">Locations</a></li>
+          <li class="navitem navlink"><a href="#">Compendium</a></li>
+          <li class="navitem navlink"><a href="#">Dungeons</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="post-container">
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Watching my web dev lecture... This class is so awesome!
+          </p>
+          <p class="post-author">
+            <a href="#">CSMajor2020</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Anyone missing baseball?  It'd be fun to be able to watch the Beavs right now!
+          </p>
+          <p class="post-author">
+            <a href="#">BeaverBeliever</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            A body in motion must remain in motion unless acted upon by an outside force.
+          </p>
+          <p class="post-author">
+            <a href="#">NewtonRulez</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Huh?
+          </p>
+          <p class="post-author">
+            <a href="#">ConfusedTweeterer</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Why did the calf cross the road?
+          </p>
+          <p class="post-author">
+            <a href="#">Setup</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            To get to the udder side!
+          </p>
+          <p class="post-author">
+            <a href="#">Punchline</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Any questions about flexboxes?
+          </p>
+          <p class="post-author">
+            <a href="#">Hess</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            Friendly reminder: your taxes were due yesterday.
+          </p>
+          <p class="post-author">
+            <a href="#">TheIRS</a>
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+    <button type="button" id="create-post-button"><i class="fas fa-plus"></i></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-post-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add A New Character</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="post-input-element">
+            <label for="post-text-input">Character Description</label>
+            <textarea id="post-text-input"></textarea>
+          </div>
+          <div class="post-input-element">
+            <label for="post-attribution-input">Author</label>
+            <input type="text" id="post-attribution-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Post</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
